@@ -1,0 +1,397 @@
+body {
+    background-color: #1DB3CE;
+}
+/*Tab-Scrolling*/
+
+.panel-tabs {
+    clear: both;
+    border-bottom: 1px solid transparent;
+}
+.panel-tabs > li {
+    float: left;
+}
+dl {
+    PADDING: 20;
+    MARGIN: 20px;
+}
+dt {
+    PADDING: 0;
+    MARGIN: 25px;
+}
+dd {
+    PADDING: 0;
+    MARGIN: 25px;
+    font-size: 14px;
+}
+dd,
+a:hover {
+    text-decoration: none;
+}
+dl,
+dd:hover .pencil-icon {
+    visibility: visible;
+}
+.pencil-icon {
+    visibility: hidden;
+    color: #fff;
+}
+.edit:hover {
+    border: 1.90px solid #4E546C;
+    background-color: #4E546C;
+    opacity: 0.40;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 9px;
+    color: #fff;
+    font-weight: bold;
+}
+.panel-primary {
+    border-color: #fff;
+    position: relative;
+    bottom: 16px;
+    overflow: hidden;
+    margin-left: -25px;
+    margin-right: 5px;
+}
+.panel-primary-left {
+    border-color: #fff;
+    position: relative;
+    bottom: 16px;
+    /*height: 100px;*/
+
+    overflow: hidden;
+    margin-left: 1px;
+}
+.panel-primary:hover {
+    overflow-y: scroll;
+}
+.panel-primary-left:hover {
+    overflow-y: scroll;
+}
+.margin-left-style {
+    /*margin-left: 15px;*/
+}
+.panel-tabs > li.active > a,
+.panel-tabs > li.active > a:hover,
+.panel-tabs > li.active > a:focus {
+    color: #FFFFFF;
+    cursor: default;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .23);
+    border-bottom-color: transparent;
+}
+
+.well {
+    position: relative;
+    bottom: 16px;
+    right: 6px;
+    background-color: #fff;
+    height: 300px;
+}
+.scrollbar {
+    overflow: hidden;
+}
+.scrollbar:hover {
+    overflow-y: scroll;
+    min-height: 450px;
+}
+#style-1::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #D1D1D1;
+    height: 4px;
+}
+.main-content {
+    margin-bottom: 80px;
+}
+/*NAV*/
+
+.save_logo {
+    padding-bottom: 50px;
+    padding-top: 73px;
+}
+.save_logo2 {
+    padding-bottom: 30px;
+    padding-top: 53px;
+}
+.form-style {
+    margin-top: 50px;
+}
+.form-style2 {
+    margin-top: 30px;
+}
+.form-rounded {
+    border-radius: 100px;
+    border: 1px solid #1DB3CE;
+    padding: 20px;
+}
+.btn-login {
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    height: 40px;
+    border: 1px solid #1DB3CE;
+    background-color: #1DB3CE;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn-login:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+.btn-login:active {
+    outline: 0;
+    opacity: 0.6;
+    color: #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn-login:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: #1DB3CE;
+    color: #fff;
+}
+.btn-login:active:focus,
+button.btn.active:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: #1DB3CE;
+    color: #fff;
+}
+.save-card {
+    border: 2px solid #fff;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #fff;
+    padding-bottom: 50px;
+    border-radius: 19px;
+}
+.welcome-text {
+    font-size: 36px;
+}
+.organization-text {
+    font-size: 28px;
+}
+.forgot-pwd-style {
+    color: #1DB3CE;
+    margin-top: 22px;
+}
+.reset-pwd-style {
+    font-weight: bold;
+}
+a {
+    color: inherit;
+}
+.anchor-style:hover {
+    color: #fff;
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 42px; // Increase height as required
+    margin-bottom: 30px;
+    padding: 0 20px; // Now only left & right padding
+}
+.form-rounded-select {
+    border-radius: 100px;
+    border: 1px solid #1DB3CE;
+}
+/*sign-up hide and show*/
+
+.admin-details {
+    display: none;
+}
+.back-to-organization {
+    color: #1DB3CE;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+}
+.term-agree-text-style {
+    color: #646464;
+    margin-top: 12px;
+}
+/*recovery password*/
+
+.recovery-text {
+    font-size: 25px;
+}
+.forgot-pwd-style2 {
+    margin-top: 22px;
+}
+.email-sent-confirmation {
+    display: none;
+}
+.img-center {
+    display: block;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+.confirmation-style {
+    margin: 20px;
+}
+.changing-pwd-style {
+    margin-top: 22px;
+}
+/*Project Css Part*/
+
+.navbar-fixed-left {
+    width: inherit;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+    z-index: 200;
+}
+.navbar-fixed-left .navbar-nav > li {
+    float: none;
+    /* Cancel default li float: left */
+
+    width: 139px;
+}
+.navbar-fixed-left .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-fixed-left .navbar-nav > li > a:hover {
+    color: #1DB3CE;
+}
+.navbar-fixed-left + .container {
+    padding-left: 160px;
+}
+/* On using dropdown menu (To right shift popuped) */
+
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
+.navbar-inverse {
+    background-color: #4E546B;
+    border-color: #4E546B;
+    color: #fff;
+}
+.navbar-inverse .navbar-brand {
+    color: #9d9d9d;
+    background-color: #545c78;
+    height: 73.25px;
+    width: 100%;
+}
+.navbar-brand img {
+    display: block;
+    margin: 0 auto;
+}
+.profile-text {
+    font-weight: bold;
+    font-size: 12px;
+}
+.profile-text2 {
+    font-size: 13px;
+}
+.navbar-form {
+    display: block;
+    margin: 0 auto;
+}
+#custom-search-input {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+#custom-search-input .search-query {
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 20px;
+}
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #777777;
+    z-index: 50;
+}
+.notification-icon {
+    margin-top: 22px;
+}
+.icon-wrapper {
+    position: relative;
+}
+.icon-blue {
+    color: #0088cc
+}
+.icon-grey {
+    color: grey
+}
+i {
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+.badge {
+    background: #FF005C;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    padding: 5px;
+}
+.partner-style {
+    color: #4E546C;
+    font-size: 15px;
+}
+.bg-color {
+    background-color: #fff;
+}
+
+
+.adjust-width {
+    width: 100%;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    cursor: default;
+    background-color: #e1f5fe;
+    color: #4E546C;
+    border: 0px solid #ddd;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: transparent;
+}
+
+.nav-tabs  {
+    padding-top:0;
+}
