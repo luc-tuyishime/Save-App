@@ -1,7 +1,7 @@
 save.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
     $routeProvider
     .when('/',{
-        templateUrl:'components/home/homeView.html'
+        redirectTo: '/signin'
     })
     .when('/signin',{
         templateUrl:'components/signin/loginView.html'
