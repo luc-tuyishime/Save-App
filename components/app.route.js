@@ -4,33 +4,71 @@ save.config(['$routeProvider', '$locationProvider', function($routeProvider, $lo
         redirectTo: '/signin'
     })
     .when('/signin',{
-        templateUrl:'components/signin/loginView.html'
+        templateUrl:'components/signin/loginView.html',
+        data: {
+            private: false
+        }
     })
     .when('/signup',{
-        templateUrl:'components/signup/signupView.html'
+        templateUrl:'components/signup/signupView.html',
+        data: {
+            private: false
+        }
     })
     .when('/forget-password',{
-        templateUrl:'components/forget-password/forgetView.html'
+        templateUrl:'components/forget-password/forgetView.html',
+        data: {
+            private: false
+        }
     })
     .when('/change-password',{
-        templateUrl:'components/changing-password/changingView.html'
+        templateUrl:'components/changing-password/changingView.html',
+        data: {
+            private: false
+        }
     })
     .when('/project',{
-        templateUrl:'components/project/projectView.html'
+        templateUrl:'components/project/projectView.html',
+        data: {
+            private: true
+        }
     })
     .when('/saving-group',{
-        templateUrl:'components/saving-group/sgView.html'
+        templateUrl:'components/saving-group/sgView.html',
+        data: {
+            private: true
+        }
     })
     .when('/settings',{
-        templateUrl:'components/setting/settingView.html'
+        templateUrl:'components/setting/settingView.html',
+        data: {
+            private: true
+        }
     })
     .when('/map',{
-        templateUrl:'components/map/mapView.html'
+        templateUrl:'components/map/mapView.html',
+        data: {
+            private: true
+        }
     })
     .when('/404',{
-        templateUrl:'components/404/404.html'
+        templateUrl:'components/404/404.html',
+        data: {
+            private: false
+        }
     })
     .otherwise({
         redirectTo: '/404'
     });
 }]);
+
+save.run(function($rootScope, $location, $route, AuthService){
+    $rootScope.$on('$routeChangeStart', function(event, next, current){
+        if(!AuthService.get_user_status()){
+            if(next.data.private && !AuthService.is_signed_in()){
+                $location.path('/');
+                $route.reload();
+            }
+        }
+    })
+})
